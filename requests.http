@@ -1,0 +1,41 @@
+
+POST http://localhost:5001/users
+Content-Type: application/json
+
+{
+  "name" : "pepe",
+  "email": "pepe@pepe.com",
+  "role": "SUPERADMIN"
+}
+
+###
+PUT  http://localhost:5001/users/ed395d67-796f-4ddc-8647-67e59752fb5c
+Content-Type: application/json
+
+{
+  "name" : "mario",
+  "email": "mario@mario.com",
+  "role": "USER"
+}
+
+###
+DELETE http://localhost:5001/users/079cc72b-400a-43ab-bdde-67f25fa4e635
+
+###
+GET http://localhost:5001/users/475ba2ea-4e21-4b00-b754-fc8320588498
+
+###
+GET http://localhost:5001/users
+
+###
+POST http://localhost:5001/posts
+Content-Type: application/json
+
+{
+    "title": "Hola Again from5 user",
+    "content": "Hello World",
+    "uuid": "475ba2ea-4e21-4b00-b754-fc8320588498"
+}
+
+###
+GET http://localhost:5001/posts
